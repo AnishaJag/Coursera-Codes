@@ -1,3 +1,6 @@
+# This is functiond helps in creating the inverse matrix#
+#input a matrix, assign m as NULL, take the inverse of the matrix and assign it to m##
+##Create a list containing the the setiv,getinv,set and get##
 makematrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -12,7 +15,9 @@ makematrix <- function(x = matrix()) {
        getinv = getinv)
 }
 
-
+##Here we need to check if thematrix has been already inverted then give text "getting cached data" and display the inverse matrix without executing else execute the inverse matrix funxtion#
+# first we get if the getinx of makematrix has some value or not if yes we diplay the message "getting cached data" and diisplay the result#
+#Else we inverse it and display the result#
 cacheinv <- function(x, ...) {
   m <- x$getinv()
   if(!is.null(m)) {
